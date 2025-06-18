@@ -43,7 +43,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Questions, catering requests, or just want to say hello? We'd love to hear from you!
+            Questions, catering requests, or just want to say hello? We would love to hear from you!
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   {isSubmitted ? (
                     <div className="text-center py-8">
                       <div className="text-green-600 text-lg font-semibold mb-2">Thank you for your message!</div>
-                      <p className="text-gray-600">We'll get back to you within 24 hours.</p>
+                      <p className="text-gray-600">We will get back to you within 24 hours.</p>
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">

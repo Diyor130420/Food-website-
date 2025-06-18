@@ -8,10 +8,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Rolling Bites</h3>
+            <h3 className="text-2xl font-bold mb-4">Southeast Asian Delicacy</h3>
             <p className="text-gray-300 mb-4">
-              Serving delicious street food with a modern twist. Follow us around the city for the best mobile dining
-              experience!
+              Serving delicious street food with a Asian twist. 
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-6 w-6 text-gray-300 hover:text-white cursor-pointer" />
@@ -30,8 +29,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/schedule" className="text-gray-300 hover:text-white">
-                  Schedule
+                <Link href="/locations" className="text-gray-300 hover:text-white">
+                  Locations
                 </Link>
               </li>
               <li>
@@ -57,7 +56,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span className="text-gray-300">hello@rollingbites.com</span>
+                <span className="text-gray-300">hello@SoutheastAsianDelicacy.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -68,7 +67,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-300">&copy; 2024 Rolling Bites. All rights reserved.</p>
+          <p className="text-gray-300">&copy; 2024 South East Asian Delicacy. All rights reserved.</p>
         </div>
       </div>
     </footer>

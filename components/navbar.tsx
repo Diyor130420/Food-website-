@@ -12,7 +12,6 @@ export default function Navbar() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/menu", label: "Menu" },
-    { href: "/schedule", label: "Schedule" },
     { href: "/about", label: "About" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
@@ -25,7 +24,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Truck className="h-8 w-8 text-orange-600" />
-            <span className="text-2xl font-bold text-gray-900">Rolling Bites</span>
+            <span className="text-2xl font-bold text-gray-900">Southeast Asian Delicacy</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,7 +38,10 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Button className="bg-orange-600 hover:bg-orange-700">Order Now</Button>
+            <Link href="/login">
+              <Button className="bg-orange-600 hover:bg-orange-700 text-white">Order Now</Button>
+            </Link>
+
           </div>
 
           {/* Mobile Navigation */}

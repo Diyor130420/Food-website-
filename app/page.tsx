@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Star, MapPin, Clock, Users } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import NewsletterSignup from "@/components/newsletter-signup"
+
+
 
 export default function HomePage() {
   const features = [
@@ -49,31 +50,25 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[600px] bg-gradient-to-r from-orange-600 to-red-600">
-        <div className="absolute inset-0 bg-black bg-opacity-40" />
+      <section className="relative h-[600px] bg-gradient-to-r from-orange-600 to-green-600">
+        <div className="absolute inset-0 bg-green bg-opacity-40" />
+
         <Image
           src="/placeholder.svg?height=600&width=1200"
           alt="Delicious food truck meals"
           fill
           className="object-cover mix-blend-overlay"
         />
+        
         <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center text-white px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Rolling Bites</h1>
+          <div className=" text-center text-white px-4">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">Southeast Asian delicacy</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
               Gourmet street food that comes to you. Fresh, fast, and absolutely delicious.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-lg px-8 py-3">
                 <Link href="/menu">See Our Menu</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="text-white border-white hover:bg-white hover:text-orange-600 text-lg px-8 py-3"
-              >
-                <Link href="/schedule">Track Us Today</Link>
               </Button>
             </div>
           </div>
@@ -84,9 +79,8 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Rolling Bites?</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're not just a food truck - we're a mobile culinary experience bringing gourmet flavors to your
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us?</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">We are not just a food truck - we are a mobile culinary experience bringing gourmet flavors to your
               neighborhood.
             </p>
           </div>
@@ -115,9 +109,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "Korean BBQ Tacos", price: "$12", image: "/placeholder.svg?height=300&width=400" },
-              { name: "Gourmet Burger", price: "$14", image: "/placeholder.svg?height=300&width=400" },
-              { name: "Loaded Fries", price: "$8", image: "/placeholder.svg?height=300&width=400" },
+              { name: "Laksa", price: "$12", image: "/placeholder.svg?height=300&width=400" },
+              { name: "Mee Goreng", price: "$14", image: "/placeholder.svg?height=300&width=400" },
+              { name: "rendang", price: "$8", image: "/placeholder.svg?height=300&width=400" },
             ].map((item, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <Image
@@ -161,7 +155,7 @@ export default function HomePage() {
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 mb-4">"{testimonial.comment}"</p>
+                  <p className="text-gray-600 mb-4">{testimonial.comment}</p>
                   <p className="font-semibold">- {testimonial.name}</p>
                 </CardContent>
               </Card>
@@ -170,13 +164,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <NewsletterSignup />
-        </div>
-      </section>
-
+     
       <Footer />
     </div>
   )

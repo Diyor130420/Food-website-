@@ -58,7 +58,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Story</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            From a dream to the streets - discover the passion behind Rolling Bites
+            From a dream to the streets - discover the passion behind Southeast Asian Delicacy
           </p>
         </div>
       </section>
@@ -71,17 +71,17 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It All Started</h2>
               <div className="space-y-4 text-lg text-gray-600">
                 <p>
-                  Rolling Bites began as a dream shared by two food lovers who wanted to bring gourmet flavors to the
+                  Southeast Asian Delicacy began as a dream shared by two food lovers who wanted to bring gourmet flavors to the
                   streets. In 2020, Maria and James converted an old delivery truck into a mobile kitchen and hit the
                   road with a simple mission: serve amazing food wherever people gather.
                 </p>
                 <p>
                   What started as weekend farmers market visits has grown into a full-time operation serving thousands
-                  of happy customers across the city. We've maintained our commitment to fresh ingredients, creative
+                  of happy customers across the city. We have maintained our commitment to fresh ingredients, creative
                   recipes, and exceptional service.
                 </p>
                 <p>
-                  Today, Rolling Bites is more than just a food truck - we're a community gathering point, a source of
+                  Today, Southeast Asian Delicacy is more than just a food truck - we are a community gathering point, a source of
                   comfort food, and a testament to the power of following your passion.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=500&width=600"
-                alt="Rolling Bites food truck"
+                alt="Southeast Asian Delicacy food truck"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -157,9 +157,9 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
           <p className="text-xl text-gray-700 leading-relaxed">
-            "To bring people together through exceptional food experiences, one neighborhood at a time. We believe that
+            To bring people together through exceptional food experiences, one neighborhood at a time. We believe that
             great food has the power to create connections, spark conversations, and build community wherever we park
-            our truck."
+            our truck.
           </p>
           <div className="mt-8 text-lg text-gray-600">
             <p>- Maria Rodriguez, Head Chef & Founder</p>
